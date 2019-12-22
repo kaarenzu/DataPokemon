@@ -1,14 +1,11 @@
-/**
- * import POKEMON from './data/pokemon/pokemon.js'
- * import LoL from './data/lol/lol.js'
- * import POTTER from './data/potter/potter.js'
- */
-import { example } from './data.js';
 
-console.log(example);
+import POTTER from './data/potter/potter.js'
 
-/*
- * console.log(POKEMON);
- * console.log(LoL);
- * console.log(POTTER)
-*/
+import { gryffindor, slytherin, ravenclaw, hufflepuff, student, staff, unicorn, dragon, phoenix, pureBlood, halfblood,
+muggleborn } from './data.js';
+
+gryffindor(POTTER); slytherin(POTTER); ravenclaw(POTTER); hufflepuff(POTTER); student(POTTER); staff(POTTER);
+unicorn(POTTER); dragon(POTTER); phoenix(POTTER); pureBlood(POTTER); halfblood(POTTER); muggleborn(POTTER);
+
+
+
