@@ -76,15 +76,8 @@ export const halfblood = (data) => {
 };
 
 // funcion que muestra a los jugadores que tengan ancestry muggleborn
-export const muggleborn = (data) => {
+export const muggle = (data) => {
   const filtrarMugle = data.filter(elemento => (elemento.ancestry === 'muggleborn'));
   console.log(filtrarMugle);
   return filtrarMugle; 
 };
-
-export const functionOrdenar = (data) => {
-
-  const ordenarAz = data.sort();
-  console.log(ordenarAz);
-}
-

@@ -4,8 +4,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
   }
-  header {
-    
+  header { 
     font-family: Redressed;
     color: #FFFFFF;
     font-size: 61px;
@@ -72,3 +71,4 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
