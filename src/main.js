@@ -10,15 +10,29 @@ gryffindor(POTTER); slytherin(POTTER); ravenclaw(POTTER); hufflepuff(POTTER);
 student(POTTER); staff(POTTER); unicorn(POTTER); dragon(POTTER);
 phoenix(POTTER); pureBlood(POTTER); halfblood(POTTER); muggle(POTTER);
 
-// mostrar todo en pantalla
-for (let i = 0; POTTER.length; i++) {
+// Tarjeta de jugadores
+
   const container = document.getElementById('container');
-  container.innerHTML += `<div class="caja">
-    <img src = ${POTTER[i].image} class= "imagenes">
-    <li class="descripcion" >Name: ${(POTTER)[i].name}
-    <li class= "descripcion">Specie: ${(POTTER)[i].species}
-    <li class= "descripcion">House: ${(POTTER)[i].house}
-    <li class= "descripcion">Core: ${(POTTER)[i].wand.core}
-    <li class= "descripcion">Patronus: ${(POTTER)[i].patronus}
-    </div>`;
-}
+  const tarjetaJugadores= `<div class="wrap">
+  <div class="tarjeta-wrap">
+    <div class="tarjeta">
+      <div class="adelante card1"><img src = class= "imagenes">
+      <li class="descripcion" >Name:
+      <li class= "descripcion">Specie:
+      <li class= "descripcion">House: 
+      <li class= "descripcion">Core: 
+      <li class= "descripcion">Patronus: </div>
+      <div class="atras">
+      <li class="descripcion" >Gender:
+      <li class= "descripcion">DateOfBirth: 
+      <li class= "descripcion">YearOfBirth: 
+      <li class= "descripcion">Ancestry: 
+      <li class= "descripcion">Actor: </div> 
+      </div>
+    </div>
+  </div>`;
+  
+// Hacer que filtre por gryffindor 
+
+const botonGryffindor = document.getElementById('gryffindor');
+botonGryffindor.addEventListener( 'click', tarjetaGryffindor );
